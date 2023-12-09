@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rainbow</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        font-size: 2em;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: 700;
+        color: white;
+        text-transform: capitalize;
+        background: linear-gradient(
+          155deg,
+          #2ad587 0 15%,
+          #23c38f 15% 30%,
+          #1cb096 30% 45%,
+          #159d9d 45% 60%,
+          #0e8aa4 60% 75%,
+          #0777ab 75% 90%,
+          #0064b2 90% 100%
+        );
+        margin: 0;
+        padding: 0;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        user-select: none;
+        overflow: hidden;
+      }
+      .typing {
+        width: 31em;
+        height: 1.3em;
+        border-right: 4px solid transparent;
+        animation: typing 3s steps(42, end), blink-caret 0.7s step-end infinite;
+        word-break: break-all;
+        overflow: hidden;
+      }
+
+      @keyframes typing {
+        0% {
+          width: 0;
+        }
+        ​ 100% {
+          width: 31em;
+        }
+      }
+
+      @keyframes blink-caret {
+        ​from,
+        to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: currentColor;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <span>rainbow</span>
+    <span class="typing"
+      >Always believe that good things are about to happen</span
+    >
+  </body>
+</html>
